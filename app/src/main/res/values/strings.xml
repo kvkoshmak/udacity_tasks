@@ -1,0 +1,15 @@
+<resources>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_button">login</string>
+    <string name="register_button">register</string>
+    <string name="password">password</string>
+    <string name="login">login</string>
+    <string name="app_name">ShoeStore</string>
+    <string name="text_2">TEXT 2</string>
+    <string name="text_1">Welcome to this wonderful application</string>
+    <string name="welcome_button_text">Instruction</string>
+    <string name="shoe_list">shoe list</string>
+    <string name="instruction_fragment">instruction fragment</string>
+    <string name="cancel_shoe_button">Cancel</string>
+    <string name="save_shoe_button">Save</string>
+</resources>
