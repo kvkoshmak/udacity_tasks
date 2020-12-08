@@ -2,48 +2,46 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
-
-    <androidx.constraintlayout.widget.ConstraintLayout
+<!--Use simple linear layout to arrange fields-->
+    <LinearLayout
         android:id="@+id/login_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
         tools:context="InstructionFragment">
+
 
         <TextView
             android:id="@+id/instruction_text1"
             android:layout_width="match_parent"
             android:layout_height="100dp"
+            android:layout_gravity="center|center_vertical"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
+            android:layout_marginBottom="20dp"
+            android:textAlignment="center"
             android:text="@string/instruction_fragment"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.2" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         <TextView
             android:id="@+id/instruction_text2"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:layout_marginTop="16dp"
-            android:text="Instruction text"
             android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/instruction_text1" />
+            android:layout_marginBottom="200dp"
+            android:text="@string/instruction_text2"/>
 
         <Button
             android:id="@+id/instruction_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="end"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
-            android:text="@string/shoe_list"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            android:text="@string/shoe_list" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 </layout>

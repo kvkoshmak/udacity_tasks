@@ -5,11 +5,12 @@
     <string name="password">password</string>
     <string name="login">login</string>
     <string name="app_name">ShoeStore</string>
-    <string name="text_2">TEXT 2</string>
+    <string name="text_2">small application to show functionality of databinding and navigation</string>
     <string name="text_1">Welcome to this wonderful application</string>
-    <string name="welcome_button_text">Instruction</string>
+    <string name="welcome_button_text">Instructions</string>
     <string name="shoe_list">shoe list</string>
-    <string name="instruction_fragment">instruction fragment</string>
+    <string name="instruction_fragment">List of instructions:</string>
     <string name="cancel_shoe_button">Cancel</string>
     <string name="save_shoe_button">Save</string>
+    <string name="instruction_text2">To add a new pair of shoes to the list please click the plus button in the right bottom corner</string>
 </resources>

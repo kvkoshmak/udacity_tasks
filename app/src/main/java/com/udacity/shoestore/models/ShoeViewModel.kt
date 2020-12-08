@@ -1,23 +1,23 @@
 package com.udacity.shoestore.models
 
+import android.widget.Toast
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class ShoeViewModel : ViewModel() {
 
-    private val shoe_selected = MutableLiveData<Shoe>()
 
-    private val shoe_list=MutableLiveData<MutableList<Shoe>>()
+    val shoeList=MutableLiveData<MutableList<Shoe>>()
 
     init {
 //        Add a default first entry
-        shoe_selected.value=Shoe("aa",10.5,"bb","cc")
-        shoe_list.value= mutableListOf<Shoe>(shoe_selected.value!!)
+        val shoe_default=Shoe("Shoe 1",10.5,"company 1","nice shoe")
+        shoeList.value= mutableListOf<Shoe>(shoe_default)
     }
 
     fun saveCurrentDetail(detail: Shoe?) {
         detail?.let {
-            shoe_list.value?.add(it)
+            shoeList.value?.add(it)
         }
     }
 }
