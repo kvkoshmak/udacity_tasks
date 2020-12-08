@@ -33,11 +33,11 @@ class ShoeDetailFragment : Fragment() {
 
         binding.saveShoeButton.setOnClickListener {
             findNavController().navigate(ShoeDetailFragmentDirections.actionShoeDetailFragmentToShoeListFragment())
-            
+
             val shoe = Shoe(name = binding.editShoeName.text.toString(),
                             company = binding.editcompanyName.text.toString(),
                             size = binding.editshoeSize.text.toString().toDouble(),
-                            description = binding.editcompanyName.text.toString())
+                            description = binding.editshoeDescription.text.toString())
             viewModel.saveCurrentDetail(shoe)
 //            Toast.makeText(activity, checkFill().toString(), Toast.LENGTH_LONG).show()
 
@@ -50,7 +50,7 @@ class ShoeDetailFragment : Fragment() {
         return binding.root
     }
 //    private fun checkFill(): Boolean {
-//        return ((binding.editShoeName.text.toString() != null) && (binding.editcompanyName.text.toString() != null) &&
-//                (binding.editshoeSize.text.toString() != null) && (binding.editcompanyName.text.toString() != null))
+//        return (binding.editShoeName.text.isNullOrEmpty() && binding.editcompanyName.text.isNullOrEmpty() &&
+//                binding.editshoeSize.text.isNullOrEmpty() && binding.editshoeDescription.text.isNullOrEmpty())
 //    }
 }
